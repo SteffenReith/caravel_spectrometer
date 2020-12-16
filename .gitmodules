@@ -1,0 +1,6 @@
+[submodule "cargo/spectrometer"]
+	path = cargo/spectrometer
+	url = https://github.com/milovanovic/spectrometer.git
+[submodule "cargo/wb2axip"]
+	path = cargo/wb2axip
+	url = https://github.com/milovanovic/wb2axip.git
