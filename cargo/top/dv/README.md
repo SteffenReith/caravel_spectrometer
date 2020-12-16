@@ -2,7 +2,7 @@
 
 Contains tests for Spectravel project connected to Caravel. 
 ```
-├── SpectrometerTest
+└── SpectrometerTest
     └── spectrometer
         ├── plfg_nco_fft_mag_acc_pout
         ├── plfg_nco_fft_mag_acc_utx
