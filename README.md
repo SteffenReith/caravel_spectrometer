@@ -18,7 +18,7 @@
 
 # Spectravel - Spectrometer on Caravel  
 
-Spectravel consists of digital spectrometer generator designed in Chisel hardware design language connected via Wishbone to AXI4 bridge to the caravel. Block diagram of the Spectravel is given below and detailed explanation can be found [here](https://github.com/milovanovic/caravel_spectrometer/tree/master/cargo)
+Spectravel consists of digital spectrometer generator designed in Chisel hardware design language. Caravel is connected to the Spectravel via Wishbone to AXI4 bridge. Block diagram of the Spectravel is given below and detailed explanation can be found [here](https://github.com/milovanovic/caravel_spectrometer/tree/master/cargo)
 
 ![Global block scheme of the Spectravel](./cargo/doc/SpectrometerTest.svg)
 
