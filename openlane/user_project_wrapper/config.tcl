@@ -23,40 +23,40 @@ set ::env(DESIGN_NAME) user_project_wrapper
 # User Configurations
 
 ## Source Verilog Files
-set ::env(VERILOG_FILES) "\
-	$script_dir/../../verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_project_wrapper.v"
-
-## Clock configurations
-set ::env(CLOCK_PORT) "user_clock2"
-set ::env(CLOCK_NET) "mprj.clk"
-
-set ::env(CLOCK_PERIOD) "10"
-
-## Internal Macros
-### Macro Placement
-set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
-
-### Black-box verilog and views
-set ::env(VERILOG_FILES_BLACKBOX) "\
-	$script_dir/../../verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_proj_example.v"
-
-set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/user_proj_example.lef"
-
-set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/user_proj_example.gds"
-
-
-# The following is because there are no std cells in the example wrapper project.
-set ::env(SYNTH_TOP_LEVEL) 1
-set ::env(PL_RANDOM_GLB_PLACEMENT) 1
-set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
-set ::env(DIODE_INSERTION_STRATEGY) 0
-set ::env(FILL_INSERTION) 0
-set ::env(TAP_DECAP_INSERTION) 0
-set ::env(CLOCK_TREE_SYNTH) 0
+# set ::env(VERILOG_FILES) "\
+# 	$script_dir/../../verilog/rtl/defines.v \
+# 	$script_dir/../../verilog/rtl/user_project_wrapper.v"
+# 
+# ## Clock configurations
+# set ::env(CLOCK_PORT) "user_clock2"
+# set ::env(CLOCK_NET) "mprj.clk"
+# 
+# set ::env(CLOCK_PERIOD) "10"
+# 
+# ## Internal Macros
+# ### Macro Placement
+# set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
+# 
+# ### Black-box verilog and views
+# set ::env(VERILOG_FILES_BLACKBOX) "\
+# 	$script_dir/../../verilog/rtl/defines.v \
+# 	$script_dir/../../verilog/rtl/user_proj_example.v"
+# 
+# set ::env(EXTRA_LEFS) "\
+# 	$script_dir/../../lef/user_proj_example.lef"
+# 
+# set ::env(EXTRA_GDS_FILES) "\
+# 	$script_dir/../../gds/user_proj_example.gds"
+# 
+# 
+# # The following is because there are no std cells in the example wrapper project.
+# set ::env(SYNTH_TOP_LEVEL) 1
+# set ::env(PL_RANDOM_GLB_PLACEMENT) 1
+# set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
+# set ::env(DIODE_INSERTION_STRATEGY) 0
+# set ::env(FILL_INSERTION) 0
+# set ::env(TAP_DECAP_INSERTION) 0
+# set ::env(CLOCK_TREE_SYNTH) 0
 
 
 # DON'T TOUCH THE FOLLOWING SECTIONS
@@ -104,3 +104,35 @@ set ::env(FP_IO_HLENGTH) $::unit
 
 set ::env(FP_IO_VTHICKNESS_MULT) 4
 set ::env(FP_IO_HTHICKNESS_MULT) 4
+
+##############################
+# Custom spectrometer config #
+##############################
+
+set caravel_dir $script_dir/../..
+
+set ::env(VERILOG_FILES) "\
+    $caravel_dir/verilog/rtl/defines.v\
+    $caravel_dir/cargo/wb2axip/rtl/wbm2axisp.v \
+    $caravel_dir/cargo/wb2axip/rtl/skidbuffer.v \
+    $caravel_dir/cargo/spectrometer/rtl/SpectrometerTest/plusarg_reader.v \
+    $caravel_dir/cargo/spectrometer/rtl/SpectrometerTest/SpectrometerTest.v \
+    $caravel_dir/cargo/top/rtl/SpectrometerTest/user_proj_example.v \
+    $caravel_dir/verilog/rtl/user_project_wrapper.v"
+
+set ::env(CLOCK_PORT) "wb_clk_i"
+set ::env(CLOCK_PERIOD) "50"
+set ::env(SYNTH_STRATEGY) 3
+set ::env(CELL_PAD) 4
+set ::env(FP_CORE_UTIL) 22
+set ::env(PL_TARGET_DENSITY) 0.25
+set ::env(PL_SKIP_INITIAL_PLACEMENT) 0
+set ::env(ROUTING_CORES) 8
+set ::env(GLB_RT_OVERFLOW_ITERS) 300
+set ::env(GLB_RT_ADJUSTMENT) 0.3
+# set ::env(GLB_RT_TILES) 14
+#set ::env(GLB_RT_ALLOW_CONGESTION) 1
+# set ::env(DIODE_INSERTION_STRATEGY) 3
+# set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 500
+# set ::env(LVS_INSERT_POWER_PINS) 1
+# set ::env(RUN_SPEF_EXTRACTION) 0
