@@ -5,31 +5,31 @@ Step 0 done without fatal errors.
 {{LICENSE COMPLIANCE PASSED}} Apache-2.0 LICENSE file was found in project root
  No third party libraries found.
 Step 1 done without fatal errors.
-{{SPDX COMPLIANCE WARNING}} Found 495 non-compliant files with the SPDX Standard. Check full log for more information
-SPDX COMPLIANCE: NON-COMPLIANT FILES PREVIEW: ['/home/baywatcher/projects/test/caravel_spectrometer_check/.gitmodules', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/sections.lds', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/spiflash.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/start.s', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/tbuart.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/gpio/gpio_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/mem/mem_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/perf/perf_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/storage/storage_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/timer/timer_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/timer2/timer2_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/dv/caravel/mgmt_soc/uart/uart_tb.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/caravel.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/chip_io.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/mgmt_protect.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/mgmt_protect_hv.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/mprj2_logic_high.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/mprj_logic_high.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.v', '/home/baywatcher/projects/test/caravel_spectrometer_check/verilog/gl/user_proj_example.v']
+{{SPDX COMPLIANCE WARNING}} Found 567 non-compliant files with the SPDX Standard. Check full log for more information
+SPDX COMPLIANCE: NON-COMPLIANT FILES PREVIEW: ['/home/baywatcher/projects/test/spectrometer/.gitmodules', '/home/baywatcher/projects/test/spectrometer/cargo/Makefile', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/.git', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/.gitmodules', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/.install_verilator.sh', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/.travis.yml', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/README.md', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/build.sbt', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/doc/images/SpectrometerVanilla.svg', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/.git', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/.install_verilator.sh', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/.travis.yml', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/build.sbt', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/doc/images/fsmfinal.svg', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/src/main/scala/AccChain.scala', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/src/main/scala/AccChainWithMem.scala', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/src/main/scala/AccDspBlock.scala', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/src/main/scala/AccParams.scala', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/src/main/scala/Accumulator.scala', '/home/baywatcher/projects/test/spectrometer/cargo/spectrometer/generators/accumulator/src/main/scala/DspQueueBlock.scala']
  Executing Step 2 of 4: Checking YAML description.
  YAML file valid!
 Step 2 done without fatal errors.
  Executing Step 3 of 4: Executing Fuzzy Consistency Checks.
-b'Going into /home/baywatcher/projects/test/caravel_spectrometer_check/verilog/rtl'
+b'Going into /home/baywatcher/projects/test/spectrometer/verilog/rtl'
 b'Removing manifest'
 b'Fetching manifest'
 b'Running sha1sum checks'
-b'Going into /home/baywatcher/projects/test/caravel_spectrometer_check/maglef'
+b'Going into /home/baywatcher/projects/test/spectrometer/maglef'
 b'Removing manifest'
 b'Fetching manifest'
 b'Running sha1sum checks'
-b'Going into /home/baywatcher/projects/test/caravel_spectrometer_check/mag'
+b'Going into /home/baywatcher/projects/test/spectrometer/mag'
 b'Removing manifest'
 b'Fetching manifest'
 b'Running sha1sum checks'
- Nothing Happened
+ Manifest Checks Passed. Caravel Version Matches.
  Documentation Checks Passed.
  Makefile Checks Passed.
 instance caravel found
 instance user_project_wrapper found
 Design is complex and contains: 47 modules
-Design is complex and contains: 989212 modules
+Design is complex and contains: 1433353 modules
 verilog Consistency Checks Passed.
  Basic Hierarchy Checks Passed.
  Running Magic Extractions From GDS...
@@ -46,16 +46,17 @@ GDS Checks Passed
 {PROGRESS} Running Pins and Power Checks...
 Pins check passed
 Internal Power Checks Passed!
- Consistency Checks Failed+ Reason: The user didn't use the following power/ground nets: vdda1 vssd1 vccd1 vccd2 vssd2 vssa2 vdda2 vssa1
+ Fuzzy Consistency Checks Passed!
+Step 3 done without fatal errors.
  Executing Step 4 of 4: Checking DRC Violations.
  Running DRC Checks...
-Violation Message "Metal4 > 3um spacing to unrelated m4 < 0.4um (met4.5b) "found 8 Times.
-Violation Message "Metal3 > 3um spacing to unrelated m3 < 0.4um (met3.3d) "found 4 Times.
-Violation Message "Can't overlap those layers "found 4 Times.
-Violation Message "Min area of metal2 holes > 0.14um^2 (met2.7) "found 22 Times.
-Violation Message "Metal3 spacing < 0.3um (met3.2) "found 8 Times.
-Violation Message "Metal3 width < 0.3um (met3.1) "found 3 Times.
-Violation Message "Metal1 > 3um spacing to unrelated m1 < 0.28um (met1.3b) "found 19 Times.
-Violation Message "Metal2 > 3um spacing to unrelated m2 < 0.28um (met2.3b) "found 23 Times.
- DRC Checks on MAG Failed, Reason: Total # of DRC violations is 91
+Violation Message "Metal4 > 3um spacing to unrelated m4 < 0.4um (met4.5b) "found 2 Times.
+Violation Message "Metal3 > 3um spacing to unrelated m3 < 0.4um (met3.3d) "found 2 Times.
+Violation Message "Can't overlap those layers "found 2 Times.
+Violation Message "Min area of metal2 holes > 0.14um^2 (met2.7) "found 20 Times.
+Violation Message "Metal3 spacing < 0.3um (met3.2) "found 6 Times.
+Violation Message "Metal3 width < 0.3um (met3.1) "found 1 Times.
+Violation Message "Metal1 > 3um spacing to unrelated m1 < 0.28um (met1.3b) "found 17 Times.
+Violation Message "Metal2 > 3um spacing to unrelated m2 < 0.28um (met2.3b) "found 21 Times.
+ DRC Checks on MAG Failed, Reason: Total # of DRC violations is 71
 TEST FAILED AT STEP 4
