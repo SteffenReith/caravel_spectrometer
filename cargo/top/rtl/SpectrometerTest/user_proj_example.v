@@ -149,7 +149,7 @@ module user_proj_example (
 	assign io_out[22] = w_uart_int;
 	assign io_oeb[23] = 1'b0;		// uart_tx is output
 	assign io_out[23] = w_uart_tx;
-	assign io_out[24] = 1'b0;
+	assign io_out[24] = 1'b0;		
 	assign io_oeb[24] = 1'b1;		// uart_rx is input
 	assign w_uart_rx  = io_in[24];
 
