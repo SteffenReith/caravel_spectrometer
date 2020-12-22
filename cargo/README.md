@@ -34,8 +34,8 @@ In order to run verilog tests for Spectravel connected to Caravel, PDK_ROOT and 
 $ make check-env
 ```
 Currently there are four different tests for Spectravel connected to Caravel:
-* plfg_nco_fft_mag_acc_utx - Data path is: PLFG -> NCO -> FFT -> MAG -> ACC -> UART output Tx
-* plfg_nco_fft_mag_acc_pout - Data path is: PLFG -> NCO -> FFT -> MAG -> ACC -> parallel output (8b AXI4-Stream)
+* plfg_nco_fft_mag_acc_utx - Data path is: PLFG -> NCO -> FFT -> MAG -> ACC -> uTx (UART output) 
+* plfg_nco_fft_mag_acc_pout - Data path is: PLFG -> NCO -> FFT -> MAG -> ACC -> outStream (8b AXI4-Stream)
 * pin_nco_fft_mag_acc_pout - Data path is: inStream (8b AXI4-Stream) -> NCO -> FFT -> MAG -> ACC -> outStream (8b AXI4-Stream)
 * pin_fft_mag_acc_pout - Data path is: inStream (8b AXI4-Stream) -> FFT -> MAG -> ACC -> outStream (8b AXI4-Stream)
 
