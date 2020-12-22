@@ -13,7 +13,8 @@ This directory contains following submodules and directories:
 * `top/rtl/SpectrometerTest` - contains `user_proj_example.v` which is the top level verilog file for Spectravel
 * Makefile - have targets for verilog and test generation 
 
-## Running tests and verilog generation
+## Verilog generation and Chisel tests
+
 Before running make commands, we could set the size of FFT inside spectrometer. Default size is 128. For example, we could set the size of the FFT inside spectrometer to be equal to 256 with the command:
 ```sh
 $ export SIZE=256
@@ -28,6 +29,8 @@ To run chisel tests for digital spectrometer, run command:
 ```sh
 $ make test_spectrometer
 ```
+
+## Verilog tests
 
 In order to run verilog tests for Spectravel connected to Caravel, PDK_ROOT and RISCV32 paths must be set. RISCV32 is path to RV32I Toolchain. For RV32I toolchain installation click [here](https://github.com/cliffordwolf/picorv32#building-a-pure-rv32i-toolchain). To check if paths are set, run command:
 ```sh
