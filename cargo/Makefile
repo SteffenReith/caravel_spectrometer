@@ -21,6 +21,11 @@ test_spectrometer:
 .PHONY: test_top
 test_top:
 	make move_user_proj_example
+	cd $(TOP_TEST_PATH); make all; cd -;
+	make move_back_user_proj_example
+
+run_all:
+	make move_user_proj_example
 	make verilog_spectrometer
 	make test_spectrometer
 	cd $(TOP_TEST_PATH); make all; cd -;
