@@ -13,12 +13,12 @@ This directory contains following submodules and directories:
 * `top/rtl/SpectrometerTest` - contains `user_proj_example.v` which is the top level verilog file for Spectravel
 * Makefile - have targets for verilog and test generation 
 
-## Useful commands
+## Running tests and verilog generation
 Before running make commands, we could set the size of FFT inside spectrometer. Default size is 128. For example, we could set the size of the FFT inside spectrometer to be equal to 256 with the command:
 ```sh
 $ export SIZE=256
 ```
-To run verilog generation and Chisel tests, sbt and verilator must be installed. For installation details see this [link](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html#requirements)
+To run verilog generation and Chisel tests, sbt and verilator must be installed. For installation details see this [link](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html#requirements).
 
 In order to generate verilog file SpectrometerTest.v which contains verilog code for digital spectrometer, run command:
 ```sh
