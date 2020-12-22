@@ -41,6 +41,8 @@ Currently there are four different tests for Spectravel connected to Caravel:
 
 All tests contain C code where appropriate Spectravel registers are set in order to obtain desired functionality. Output of the Spectravel is compared with golden model generated with Chisel. In order for test to pass, Spectravel output data must be the same as golden model data.
 
+By default, caravel_spectrometer repository contains all data needed to run verilog tests. Thus, verilog tests can be run without installing sbt.
+
 In order to test Spectravel added to the Caravel, run command:
 ```sh
 $ make test_top
